@@ -21,12 +21,15 @@ In this case, it’s Hospital/clinic Management. Patients should be able to book
 
 **Doctor**
 
-Doctor_id	SERIAL	PRIMARY KEY
-Doctor_name	VARCHAR(50)	 NOT NULL
-Doctor_specialisation 	serial	Foregien 
-Password_hash	VARCHAR(255)	NOT NULL
-email	VARCHAR(100)	UNIQUE, NOT NULL
-created_at		
+|   |   |   |
+|---|---|---|
+|Doctor_id|	SERIAL|	PRIMARY KEY|
+|Doctor_name|VARCHAR(50)| NOT NULL|
+|Doctor_specialisation |	SERIAL|	Foreign key|
+|Password_hash|VARCHAR(255)|	NOT NULL|
+|email|	VARCHAR(100)|	UNIQUE, NOT NULL|
+|created_at| |	|	
+| | | |
 
 
 **Specialisation**
