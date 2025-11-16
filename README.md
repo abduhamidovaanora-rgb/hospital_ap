@@ -34,6 +34,8 @@ In this case, it’s Hospital/clinic Management. Patients should be able to book
 
 **Specialisation**
 
+|   |   |   |
+|---|---|---|
 Specialisation_id	SERIAL	PRIMARY KEY
 Specialisation_name 	VARCHAR(50)	 NOT NULL
 
