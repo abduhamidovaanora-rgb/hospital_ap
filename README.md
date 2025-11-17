@@ -36,25 +36,30 @@ In this case, it’s Hospital/clinic Management. Patients should be able to book
 
 |   |   |   |
 |---|---|---|
-Specialisation_id	SERIAL	PRIMARY KEY
-Specialisation_name 	VARCHAR(50)	 NOT NULL
+Specialisation_id |	SERIAL	PRIMARY KEY |
+Specialisation_name |	VARCHAR(50)	 NOT NULL |
+| | | |
 
 **Patient**
-Patient_id	SERIAL	PRIMARY KEY
-Patient_name	VARCHAR(50)	 NOT NULL
-Password_hash	VARCHAR(255)	NOT NULL
-email	VARCHAR(100)	UNIQUE, NOT NULL
-created_at	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP
+|   |   |   |
+|---|---|---|
+Patient_id |	SERIAL	| PRIMARY KEY |
+Patient_name |	VARCHAR(50)	| NOT NULL |
+Password_hash |	VARCHAR(255) |	NOT NULL |
+email |	VARCHAR(100)|	UNIQUE, NOT NULL |
+created_at |	TIMESTAMP |	DEFAULT CURRENT_TIMESTAMP |
 
 **Appointment**
-
-Appointment_id 	SERIAL	 PRIMARY KEY
-Patient_id	INTEGER	FOREIGN KEY
-Doctor_id	INTEGER	FOREIGN KEY
-Created_date	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP
-Appointment_date	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP
-Appointment_canceled_date	BIGINT	
-Comments	VARCHAR(450)	
+|   |   |   |
+|---|---|---|
+Appointment_id | SERIAL	| PRIMARY KEY |
+Patient_id |	INTEGER	| FOREIGN KEY |
+Doctor_id |	INTEGER	| FOREIGN KEY |
+Created_date |	TIMESTAMP	| DEFAULT CURRENT_TIMESTAMP |
+Appointment_date| TIMESTAMP | DEFAULT CURRENT_TIMESTAMP |
+Appointment_canceled_date |	BIGINT	|
+Comments |	VARCHAR(450)|	
+||||
 
 Creating a diagram using [chart db](https://app.chartdb.io). 
 
